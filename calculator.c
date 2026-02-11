@@ -1,5 +1,6 @@
 
 #include<stdio.h>
+int div(int a, int b);
 int add(int a, int b)
 {
 	return a+b;
@@ -34,9 +35,17 @@ int main()
 			res = mul(a,b);
 			printf("result: %d\n", res);
                         break;
+		case '-':
+                        res = div(a,b);
+                        printf("result: %d\n", res);
+                        break;
 
 		default:
 			printf("Invalid input\n");
 	}
 	return 0;
+}
+int div(int a, int b)
+{
+	return a/b;
 }
