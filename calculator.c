@@ -7,6 +7,12 @@ int add(int a, int b)
 int sub(int a, int b)
 {
 	return a-b;
+
+}
+int mul(int a, int b)
+{
+	return a*b;
+
 }
 int main()
 {
@@ -24,6 +30,11 @@ int main()
 			res = sub(a,b);
 			printf("result: %d\n", res);
 			break;
+		case '*':
+			res = mul(a,b);
+			printf("result: %d\n", res);
+                        break;
+
 		default:
 			printf("Invalid input\n");
 	}
