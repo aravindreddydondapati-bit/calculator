@@ -13,6 +13,6 @@ int main()
 		rev = rev + (rem*10);
 		num /= 10;
 	}
-	printf("%d", num);
+	printf("Reversed number: %d", num);
 	return 0; 
 }
